@@ -1,8 +1,14 @@
 import java.util.Scanner;
 
 class PrintMessage_1 {
-    public static void main(String[] args) {
+
+    // Print a message method
+    public static void printMessage() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(scanner.nextLine());
+    }
+    // Calling the method
+    public static void main(String[] args) {
+        printMessage();
     }
 }

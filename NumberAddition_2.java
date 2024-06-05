@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 class NumberAddition_2 {
-    public static void main(String[] args) {
+
+    // Method for adding three numbers, determining whether they are odd or even, and printing the results
+    public static void printAdditionAndOddOrEven() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your first number: ");
@@ -14,7 +16,13 @@ class NumberAddition_2 {
         int num3 = scanner.nextInt();
 
         int sum = num1 + num2 + num3;
+        String evenOrOdd = (sum % 2 == 0) ? "even" : "odd";
 
-        System.out.println("Adding " + num1 + ", " + num2 + " and " + num3 + " equals to: " + sum + ", and the number is " + (sum % 2 == 0 ? "even." : "odd."));
+        System.out.println("Adding " + num1 + ", " + num2 + " and " + num3 + " equals to: " + sum + ". This number is " + evenOrOdd + ".");
+    }
+
+    public static void main(String[] args) {
+        // Calling the method
+        printAdditionAndOddOrEven();
     }
 }
